@@ -1,0 +1,270 @@
+<title>Ginecólogos Medifem Costa Rica · Diagnóstico y propuesta de consultoría</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@400;500;600;700&display=swap');
+
+  :root{
+    --bg:#FBF9F5; --paper:#FFFFFF; --ink:#1C1712; --ink-soft:#4A4038;
+    --gray:#786C5E; --rule:#E4DACB; --accent:#A14A38; --accent-soft:#D9AC9C;
+    --tint:#F3ECE1;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Newsreader',Georgia,serif;line-height:1.65;font-size:17px;}
+  .wrap{max-width:840px;margin:0 auto;padding:0 40px;}
+  h1,h2,h3,h4{font-family:'Newsreader',Georgia,serif;font-weight:500;margin:0;text-wrap:balance;}
+  em{font-style:italic;color:var(--accent);}
+  a{color:var(--accent);}
+  .eyebrow{font-family:'Outfit',sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:12.5px;font-weight:600;color:var(--accent);}
+  .num{font-family:'Outfit',sans-serif;color:var(--accent);font-weight:600;font-size:13px;letter-spacing:.06em;}
+  .hr{border:none;border-top:1px solid var(--rule);margin:0;}
+  .tabular{font-variant-numeric:tabular-nums;}
+
+  header.top{padding:56px 0 40px;}
+  header.top .meta{display:flex;justify-content:space-between;font-family:'Outfit',sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--gray);padding-bottom:22px;border-bottom:1px solid var(--rule);flex-wrap:wrap;gap:8px;}
+  header.top h1{font-size:clamp(32px,5vw,46px);line-height:1.15;margin-top:34px;font-weight:500;}
+  header.top p.sub{color:var(--ink-soft);font-size:18px;max-width:640px;margin-top:20px;}
+  header.top .clinic-line{font-family:'Outfit',sans-serif;font-size:13px;color:var(--gray);text-transform:uppercase;letter-spacing:.06em;margin-top:18px;}
+  header.top .clinic-line b{color:var(--ink);font-weight:600;}
+
+  section{padding:52px 0;}
+  section.tint{background:var(--tint);}
+  section.tint .wrap{padding-top:8px;padding-bottom:8px;}
+  .phase-head{padding:16px 0 8px;}
+  .phase-head .num{font-size:15px;}
+  .phase-head h2{font-size:clamp(26px,4vw,34px);margin-top:10px;}
+  .phase-head p.lead{color:var(--ink-soft);font-size:17px;max-width:660px;margin-top:14px;}
+
+  .sec-num{font-family:'Outfit',sans-serif;color:var(--accent);font-weight:600;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;}
+  h3.sec-title{font-size:24px;margin-top:8px;font-weight:500;}
+  p{color:var(--ink-soft);}
+  p.tight{margin:14px 0;}
+
+  .dim{padding:34px 0;border-top:1px solid var(--rule);}
+  .dim .roman{font-family:'Outfit',sans-serif;color:var(--accent-soft);font-size:34px;font-weight:700;float:left;width:56px;line-height:1;}
+  .dim .content{margin-left:56px;}
+  .dim h4{font-size:21px;font-weight:600;margin-bottom:2px;}
+  .dim .qsub{font-family:'Outfit',sans-serif;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--gray);margin:16px 0 4px;}
+  .dim p{margin:2px 0 0;font-size:16px;}
+  .finding{background:var(--paper);border:1px solid var(--rule);border-left:3px solid var(--accent);padding:16px 20px;margin-top:14px;border-radius:2px;}
+  .finding b{color:var(--ink);}
+
+  .statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));border:1px solid var(--rule);margin-top:8px;}
+  .statgrid > div{padding:22px 20px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .statgrid > div:last-child{border-right:none;}
+  .statgrid .v{font-family:'Outfit',sans-serif;font-weight:700;font-size:27px;color:var(--accent);}
+  .statgrid .l{color:var(--gray);font-size:12.5px;font-family:'Outfit',sans-serif;margin-top:4px;line-height:1.5;}
+
+  table{width:100%;border-collapse:collapse;font-family:'Outfit',sans-serif;font-size:14px;margin-top:14px;}
+  th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top;}
+  th{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);font-weight:600;}
+  td.num-c{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;}
+  tr.hl td{background:var(--tint);font-weight:600;}
+  tr.total td{font-weight:700;border-top:2px solid var(--ink);color:var(--ink);}
+  .tablewrap{overflow-x:auto;}
+
+  .callout{background:var(--tint);border-left:3px solid var(--accent);padding:20px 24px;margin:20px 0;}
+  .callout p{margin:0;color:var(--ink-soft);}
+
+  .steps{counter-reset:step;}
+  .step{display:flex;gap:18px;padding:18px 0;border-top:1px solid var(--rule);}
+  .step .n{font-family:'Outfit',sans-serif;font-weight:700;color:var(--accent);font-size:20px;min-width:28px;}
+  .step p{margin:0;}
+
+  .cta-box{border:1.5px solid var(--ink);padding:28px 30px;margin-top:22px;background:var(--paper);}
+  .cta-box .tag{font-family:'Outfit',sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:11.5px;color:var(--gray);}
+  .cta-box .amt{font-family:'Outfit',sans-serif;font-weight:700;font-size:30px;color:var(--ink);margin-top:8px;}
+
+  .not-verified{font-family:'Outfit',sans-serif;font-size:13px;color:var(--gray);margin-top:10px;}
+  .not-verified li{margin-bottom:4px;}
+
+  footer{padding:50px 0 70px;border-top:1px solid var(--ink);margin-top:20px;}
+  footer p{font-family:'Outfit',sans-serif;font-size:12.5px;color:var(--gray);text-transform:uppercase;letter-spacing:.05em;}
+
+  .print-btn{font-family:'Outfit',sans-serif;background:var(--ink);color:var(--bg);border:none;padding:10px 18px;border-radius:2px;font-weight:600;font-size:12.5px;cursor:pointer;letter-spacing:.04em;text-transform:uppercase;}
+
+  @media print{ .print-btn{display:none;} section{padding:24px 0;} .dim{page-break-inside:avoid;} }
+  @media (max-width:600px){ .dim .roman{float:none;width:auto;margin-bottom:8px;} .dim .content{margin-left:0;} }
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="meta">
+      <span>Diagnóstico y propuesta de consultoría · Confidencial</span>
+      <span>Agosto 2026</span>
+    </div>
+    <h1>Ginecólogos Medifem ya tiene algo que casi ninguna clínica de su tamaño logra: <em>266 reseñas en Google a 5.0 estrellas</em>. Este documento muestra dónde se está perdiendo el resto de esa confianza.</h1>
+    <p class="sub">Un diagnóstico de visibilidad digital, seguido de un solo paso sugerido al final. Sin jerga de mercadeo: cada término se explica antes de usarse.</p>
+    <div class="clinic-line"><b>Ginecólogos Medifem Costa Rica</b> · Ginecología y Obstetricia, Medicina Materno Fetal · Hospital Clínica Bíblica, San José</div>
+    <button class="print-btn" onclick="window.print()" style="margin-top:26px;">Descargar como PDF</button>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Antes de empezar</div>
+    <h3 class="sec-title">Qué es este documento, y por qué tiene dos partes</h3>
+    <p class="tight">Este es un diagnóstico real de visibilidad digital, hecho con los mismos datos públicos que hoy usan sus pacientes para decidir dónde atenderse: Google, Huli Health (el directorio médico más usado en Costa Rica) e Instagram, comparados contra cinco competidores directos del Gran Área Metropolitana. Avanza en dos partes, en este orden:</p>
+    <div class="steps" style="margin-top:10px;">
+      <div class="step"><div class="n">1</div><p><b>El diagnóstico</b>: dónde está parada Ginecólogos Medifem hoy, dimensión por dimensión, con hallazgos concretos y sus fuentes. Sin esto, cualquier recomendación es una opinión.</p></div>
+      <div class="step"><div class="n">2</div><p><b>El paso sugerido</b>: al cierre del documento, qué haría falta para cerrar las brechas que este diagnóstico encuentra, explicado con calma, en una sola propuesta.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint">
+  <div class="wrap">
+    <div class="phase-head">
+      <div class="num">EL PANORAMA</div>
+      <h2>Dónde está parada Ginecólogos Medifem hoy</h2>
+      <p class="lead">Un diagnóstico de visibilidad digital mide algo concreto: cuántas de las personas que hoy están decidiendo con qué ginecólogo atenderse en San José logran encontrar, confiar en, y elegir a Ginecólogos Medifem, antes de que nadie del consultorio hable con ellas. Se mide en seis dimensiones, cada una con lo que significa, por qué le importa a la agenda del consultorio, y lo que se encontró.</p>
+    </div>
+    <div class="statgrid">
+      <div><div class="v tabular">2.8 / 5.0</div><div class="l">Índice general de Ginecólogos Medifem en este diagnóstico</div></div>
+      <div><div class="v tabular">266</div><div class="l">Reseñas en Google, la cifra más alta entre las 6 clínicas del panorama auditado</div></div>
+      <div><div class="v tabular">5</div><div class="l">Competidores auditados: Spazio Femenino, Femsalud, Azul Fertility Experts, Obygin, Centro Ginecológico Ibáñez</div></div>
+      <div><div class="v tabular">6,152</div><div class="l">Seguidores en la cuenta personal de Instagram del Dr. Víquez, el activo social individual más grande del panorama verificado</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <div class="dim">
+      <div class="roman">I</div>
+      <div class="content">
+        <h4>Reseñas y reputación</h4>
+        <div class="qsub">Qué es</div>
+        <p>El conteo y la calificación de reseñas que aparecen cuando alguien busca "ginecólogo San José" en Google, y las opiniones que acumula el doctor en Huli Health, el directorio donde la mayoría de pacientes en Costa Rica agenda cita. Es, hoy, el equivalente digital de que alguien le pregunte a una amiga "¿con quién te atendés?", pero a escala de miles de personas.</p>
+        <div class="qsub">Por qué le importa a la agenda</div>
+        <p>Dos consultorios con el mismo nivel real de atención no compiten igual si uno tiene 260 reseñas y el otro 40: quien busca usa el volumen como atajo de confianza, incluso antes de leer una sola reseña. En Huli casi todos los ginecólogos de este panorama están en 5.0 estrellas, así que el número que realmente separa a unos de otros es cuántas opiniones acumulan, no la nota.</p>
+        <div class="finding"><b>Lo que encontramos:</b> en Google, Ginecólogos Medifem tiene 266 reseñas a 5.0 estrellas, la cifra más alta de las seis clínicas de este panorama, por encima de Clínica Spazio Femenino (199) y muy por encima de Femsalud (5), Azul Fertility Experts (130) y Centro Ginecológico Ibáñez (41). Es una fortaleza real y poco común para un consultorio de este tamaño. En Huli Health, sin embargo, el perfil del Dr. Víquez tiene 231 opiniones, frente a un promedio de 631 entre los cuatro competidores con perfil activo en ese mismo directorio (José Gabriel Cabezas Garita de Spazio Femenino con 1,176, Gerson Niebles Sandoval de Femsalud con 496, Marcos Azulay Bentolila de Azul Fertility con 443, y un promedio de 409 entre los cinco médicos de Clínica Obygin). Google y Huli cuentan historias distintas: en el buscador general, Medifem lidera; en el directorio donde el paciente costarricense agenda directamente, va atrás.</p></div>
+      </div>
+    </div>
+
+    <div class="dim">
+      <div class="roman">II</div>
+      <div class="content">
+        <h4>Sitio web y conversión</h4>
+        <div class="qsub">Qué es</div>
+        <p>La única propiedad digital de Medifem que el consultorio controla por completo. Google, Huli e Instagram son terreno rentado, sus reglas pueden cambiar de un día para otro. El sitio es lo único donde el consultorio decide qué se cuenta y cómo.</p>
+        <div class="qsub">Por qué le importa a la agenda</div>
+        <p>El sitio suele ser donde una paciente confirma una decisión que ya casi tomó, después de ver las reseñas o de que alguien se lo recomendara. Si en ese momento el sitio no refleja la misma solidez que muestran esas reseñas, la duda entra justo antes de escribir por WhatsApp.</p>
+        <div class="finding"><b>Lo que encontramos:</b> el sitio es moderno, carga en poco más de dos segundos y funciona bien en el teléfono, con un widget de WhatsApp visible en toda página. Dicho eso, el mismo widget de reseñas de Google que trae el sitio muestra 201 opiniones cacheadas, 65 menos que las 266 reales y vivas en Google el día de este diagnóstico, es decir, una de cada cuatro reseñas reales de la clínica no le llega a quien visita el sitio. El título de la página de inicio es genérico ("Inicio - Medifem") y no menciona ni la especialidad ni la ciudad, y la credencial más fuerte del Dr. Víquez (subespecialista en Medicina Materno Fetal, con entrenamiento en cardiología fetal en el Hospital Vall d'Hebron de Barcelona) no aparece destacada en ninguna página, a pesar de ser un diferenciador real frente al resto del panorama.</p></div>
+      </div>
+    </div>
+
+    <div class="dim">
+      <div class="roman">III</div>
+      <div class="content">
+        <h4>Posicionamiento en buscadores e inteligencia artificial (SEO y AEO)</h4>
+        <div class="qsub">Qué es</div>
+        <p>SEO es que Google muestre a Medifem cuando alguien busca por categoría, "ginecólogo San José", no solo cuando busca el nombre exacto. AEO es lo mismo, pero para asistentes de inteligencia artificial: cuando alguien le pregunta a ChatGPT o a Perplexity "cuál es el mejor ginecólogo en San José", es esa herramienta, no Google, la que decide qué nombre mencionar primero.</p>
+        <div class="qsub">Por qué le importa a la agenda</div>
+        <p>Cada vez más pacientes empiezan la búsqueda de un especialista directamente en un asistente de IA en lugar de en Google. Si ese asistente no tiene de dónde citar a Medifem, la clínica queda fuera de esa conversación antes de que exista la oportunidad de aparecer.</p>
+        <div class="finding"><b>Lo que encontramos:</b> en el buscador tradicional de Google Maps, Medifem aparece de forma orgánica en segundo lugar al buscar "ginecólogo San José Costa Rica", justo debajo de un resultado patrocinado, un dato real y positivo. En inteligencia artificial la historia cambia: se corrieron cinco búsquedas realistas directamente en Perplexity ("mejor ginecólogo recomendado en San José", "mejor clínica de ginecología y obstetricia en San José", "dónde hacerme un ultrasonido 4D en San José", "ginecólogo recomendado Hospital Clínica Bíblica", y "mejor ginecóloga mujer en San José") y ninguna mencionó a Medifem ni al Dr. Víquez por nombre, ni siquiera la que preguntaba específicamente por el hospital donde él atiende. Dos búsquedas adicionales, usadas como aproximación de lo que un motor tipo ChatGPT indexaría (limitación explicada abajo), tampoco lo mencionaron. El resultado combinado es 0 de 7. El sitio sí tiene una base técnica sana para corregir esto: usa el complemento Yoast SEO y publica datos estructurados (schema.org) correctos, pero el campo que conecta esos datos con los demás perfiles de la clínica (llamado "sameAs") solo incluye la cuenta de Instagram del doctor, no la ficha de Google, ni Huli, ni Facebook, lo que le dificulta a un sistema automatizado confirmar que todos esos perfiles son la misma entidad.</p></div>
+      </div>
+    </div>
+
+    <div class="dim">
+      <div class="roman">IV</div>
+      <div class="content">
+        <h4>Listados: Google Business Profile y Huli</h4>
+        <div class="qsub">Qué es</div>
+        <p>La ficha que aparece en el mapa de Google, y el perfil en Huli Health. A diferencia de la pauta paga, este tráfico no cuesta nada: solo hay que reclamarlo, mantenerlo correcto y que diga lo mismo en todas partes.</p>
+        <div class="qsub">Por qué le importa a la agenda</div>
+        <p>Es la persona que ya decidió que quiere ese tipo de consulta y está comparando opciones activamente, el momento de mayor intención de agendar de todo el recorrido de la paciente.</p>
+        <div class="finding"><b>Lo que encontramos:</b> la ficha de Google está completa, verificada y activa, con horario, teléfono y el atributo "amigable con LGBTQ+" visible, algo que ningún competidor de este panorama muestra. La brecha real está en el nombre: el sitio web y los datos estructurados usan "Medifem" como nombre de marca, pero la ficha viva de Google (la fuente oficial que este documento usa en el encabezado, como corresponde) muestra "Ginecólogos Medifem Costa Rica", el nombre completo. Es una discrepancia menor por sí sola, pero es exactamente el tipo de señal que hace dudar a un sistema automatizado sobre si está viendo una sola entidad o dos relacionadas. En Huli, el perfil vive bajo el nombre personal del doctor, no bajo una página de clínica como sí tienen Spazio Femenino o Femsalud, lo que fragmenta la señal de reputación entre dos formatos distintos de perfil.</p></div>
+      </div>
+    </div>
+
+    <div class="dim">
+      <div class="roman">V</div>
+      <div class="content">
+        <h4>Redes sociales</h4>
+        <div class="qsub">Qué es</div>
+        <p>El canal donde se construye la confianza antes de que exista la necesidad activa de buscar, la diferencia entre generar demanda y solo capturarla (que es lo que hacen Google y Huli).</p>
+        <div class="qsub">Por qué le importa a la agenda</div>
+        <p>Es, con mucho, la dimensión más barata de fortalecer: no requiere pauta, requiere consistencia.</p>
+        <div class="finding"><b>Lo que encontramos, la fortaleza más clara de todo este diagnóstico:</b> la cuenta personal del Dr. Víquez, @drmarioviquez, tiene 6,152 seguidores reales, por encima de las dos cuentas de clínica competidoras más grandes verificadas en este panorama, Azul Fertility Experts (5,721) y Clínica Spazio Femenino (4,658). El doctor ya construyó una audiencia real y más grande que la de sus competidores directos. El problema es que esa audiencia vive en un perfil personal, mientras la cuenta con el nombre de la clínica, @medifemcr, tiene apenas 142 seguidores y sigue solo a 5 cuentas, casi abandonada, y muestra un número de WhatsApp distinto (que termina en 4007) al que aparece publicado en el sitio web (que termina en 3426). Dos cuentas activas con identidades distintas, cuando debería ser evidente cuál es la oficial.</p></div>
+      </div>
+    </div>
+
+    <div class="dim">
+      <div class="roman">VI</div>
+      <div class="content">
+        <h4>Consistencia y preparación para IA</h4>
+        <div class="qsub">Qué es</div>
+        <p>Que el nombre, los datos y la información de Medifem digan exactamente lo mismo en todos los canales. Tanto Google como una inteligencia artificial tienen que decidir, sin poder preguntar, si dos perfiles distintos son la misma entidad.</p>
+        <div class="qsub">Por qué le importa a la agenda</div>
+        <p>Ninguna inconsistencia por sí sola espanta a una paciente, pero juntas sí pueden hacer que un sistema automatizado trate a Medifem como una marca más pequeña, más nueva o menos establecida de lo que realmente es, justo cuando la reputación real (266 reseñas, 6,152 seguidores) dice lo contrario.</p>
+        <div class="finding"><b>Lo que encontramos:</b> se repite el mismo patrón en tres capas distintas. El nombre de marca ("Medifem" en el sitio y los datos estructurados, "Ginecólogos Medifem Costa Rica" en Google). El número de contacto (8863-3426 publicado en el sitio, distinto al que responde en el WhatsApp de la cuenta @medifemcr). Y la identidad social (una cuenta personal fuerte y una cuenta de clínica casi vacía). Cada una es un detalle menor. Las tres juntas son la razón más probable, junto con la ausencia casi total en las respuestas de IA documentada en la dimensión III, de que un sistema automatizado no tenga hoy una imagen clara y unificada de quién es Ginecólogos Medifem.</p></div>
+      </div>
+    </div>
+
+    <div class="not-verified">
+      <p style="margin:0 0 6px;font-weight:600;color:var(--ink-soft);">No verificado en esta revisión (12 de agosto de 2026):</p>
+      <ul>
+        <li>Número de reseñas de Centro Ginecológico Ibáñez en Huli Health: no apareció en el listado principal de la especialidad revisado el 12 de agosto de 2026.</li>
+        <li>Seguidores de Instagram de Femsalud y de Clínica Obygin: no se encontraron cuentas activas identificables al momento de esta revisión.</li>
+        <li>Respuestas directas de ChatGPT: esta sesión no tuvo acceso a una cuenta activa de ChatGPT. Las dos búsquedas usadas como aproximación en la dimensión III son una estimación del contenido que ese motor indexaría, no una transcripción real de sus respuestas, y se reportan como tal.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="tint">
+  <div class="wrap">
+    <div class="sec-num">Comparación</div>
+    <h3 class="sec-title">Ginecólogos Medifem frente a cinco competidores directos</h3>
+    <p class="tight">En Huli, casi todos los perfiles de este panorama tienen calificación de 5.0, así que la columna que de verdad ordena a la competencia es el número de opiniones, no la nota. Por eso la tabla está ordenada por reseñas de Google, la dimensión donde Medifem lidera.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Clínica</th><th>Ubicación</th><th>Google</th><th>Huli Health</th></tr></thead>
+        <tbody>
+          <tr class="hl"><td><b>Ginecólogos Medifem Costa Rica</b> (Dr. Mario Víquez)</td><td>Hospital Clínica Bíblica, San José</td><td class="num-c">5.0 ★ (266)</td><td class="num-c"><a href="https://www.hulihealth.com/en/doctor/mario-roberto-viquez-villalobos" target="_blank" rel="noopener">5.0 ★ (231)</a></td></tr>
+          <tr><td>Clínica Spazio Femenino by Cabezas y Mora (Dr. Cabezas Garita / Dr. Mora Sánchez)</td><td>Naos Plaza, Heredia</td><td class="num-c">4.9 ★ (199)</td><td class="num-c"><a href="https://www.hulihealth.com/en/doctor/jose-gabriel-cabezas-garita" target="_blank" rel="noopener">5.0 ★ (1,176)</a></td></tr>
+          <tr><td>Clínica Azul Fertility Experts (Dr. Azulay Bentolila)</td><td>Sabana Sur, San José</td><td class="num-c">4.8 ★ (130)</td><td class="num-c"><a href="https://www.hulihealth.com/en/doctor/marcos-azulay-bentolila" target="_blank" rel="noopener">5.0 ★ (443)</a></td></tr>
+          <tr><td>Centro Ginecológico Ibáñez</td><td>Heredia</td><td class="num-c">4.4 ★ (41)</td><td class="num-c">no verificado</td></tr>
+          <tr><td>Clínica Obygin (5 médicos)</td><td>San José, Merced</td><td class="num-c">sin ficha reclamada</td><td class="num-c">5.0 ★ (promedio 409 por médico)</td></tr>
+          <tr><td>Clínica de Especialidades Ginecológicas Femsalud (Dr. Niebles Sandoval)</td><td>Torres Paseo Colón, San José</td><td class="num-c">5.0 ★ (5)</td><td class="num-c"><a href="https://www.hulihealth.com/en/doctor/gerson-niebles-sandoval_94335e" target="_blank" rel="noopener">5.0 ★ (496)</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tight" style="font-size:13.5px;">Fuentes: fichas en vivo de Google Maps y perfiles públicos de Huli Health, consultados el 12 de agosto de 2026. Azul Fertility Experts es una clínica de fertilidad, adyacente a la ginecología general, incluida por competir por la misma paciente en las etapas de embarazo y planificación.</p>
+    <div class="callout">
+      <p><b>Lo que esta tabla no puede decir por sí sola:</b> que Medifem gane en Google y esté a la mitad de la tabla en Huli no es una contradicción, es una fuga concreta. Son dos audiencias distintas buscando en dos lugares distintos, y hoy solo una de las dos está viendo la fortaleza real del consultorio.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-num">El paso sugerido</div>
+    <h3 class="sec-title">Qué haría falta para cerrar estas brechas</h3>
+    <p class="tight">Si desea implementar las mejoras de visibilidad digital que señala este diagnóstico, el paso sugerido es contratar 10 horas de consultoría estratégica, que tiene un costo de $2,000.</p>
+
+    <div class="cta-box">
+      <div class="tag">Paso sugerido</div>
+      <div class="amt">10 horas de consultoría estratégica · $2,000</div>
+    </div>
+
+    <p class="tight" style="margin-top:22px;">Con calma, esto es lo que esas 10 horas producen, en tres partes:</p>
+
+    <div class="steps" style="margin-top:6px;">
+      <div class="step"><div class="n">a</div><p><b>Un diagnóstico ya completo y profesional</b>, como el que este mismo documento entrega: las seis dimensiones auditadas, comparadas contra el panorama competitivo real, con cada hallazgo respaldado por su fuente.</p></div>
+      <div class="step"><div class="n">b</div><p><b>Una sesión de Winning Aspiration</b> con el equipo directivo de la clínica. El Winning Aspiration es el primer paso del marco de estrategia Playing to Win, de A.G. Lafley y Roger Martin: la definición escrita y acordada de qué significa ganar para Ginecólogos Medifem. Sin esa definición compartida, cualquier plan de mercadeo, incluidas las correcciones que señala este diagnóstico, sigue siendo un borrador. De esa sesión se desprende directamente el brand strategy: la esencia de la marca, su identidad central y su identidad extendida, que después guía cada decisión de inversión en mercadeo.</p></div>
+      <div class="step"><div class="n">c</div><p><b>Una asesoría estratégica de crecimiento</b>: cómo hacer mercadeo efectivo y posicionarse en los canales donde de verdad importa, para lograr un crecimiento robusto y de 360 grados (reputación, sitio web, SEO y AEO, listados y redes, todo integrado), no solo pauta publicitaria.</p></div>
+    </div>
+
+    <p class="tight" style="margin-top:24px;">Este diagnóstico lo preparó Roberto Echeverría, consultor a cargo de la cuenta en Flow Results. Los números de este documento están para verificarse: cada cifra tiene su fuente citada arriba. Cualquier pregunta sobre la metodología o sobre el paso siguiente puede dirigirse directamente a <a href="mailto:recheverria@flowresults.com">recheverria@flowresults.com</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Diagnóstico y propuesta de consultoría, confidencial · Agosto 2026</p>
+    <p>Roberto Echeverría · recheverria@flowresults.com</p>
+    <p>Preparado para Ginecólogos Medifem Costa Rica. Datos verificados en fuentes públicas el 12 de agosto de 2026.</p>
+  </div>
+</footer>
